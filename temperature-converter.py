@@ -18,7 +18,7 @@ def convert():
             result_label.set_text(f"{temp}°C = {temp * 9/5 + 32:.2f}°F")
         else:
             result_label.set_text(f"{temp}°F = {(temp - 32) * 5/9:.2f}°C")
-        result_label.classes("text-lg font-semibold text-positive mt-4")
+        result_label.classes("text-lg font-semibold !text-positive mt-4")
         # text-positive:
     except ValueError:
         result_label.set_text("Please enter a valid number.")
@@ -48,4 +48,4 @@ with ui.card().classes("w-100 p-6 shadow-xl mx-auto mt-10 rounded-xl"):
     # px-4:
     result_label = ui.label("").classes("text-lg mt-4")
 
-ui.run()
+ui.run(port=8081)
