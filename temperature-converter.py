@@ -1,13 +1,14 @@
 from nicegui import ui
 
 ui.colors(
-      primary='#c28888',
-      secondary='#b0abad',
-      accent='#ff7da6',
-      positive='#a2e0b0',
-      negative='#f26676',
-      info='#91c2cc',
-      warning='#F2C037'
+    primary = '#b30f33',
+    secondary = '#e7c84d',
+    accent = '#3a5e9c',
+    dark = '#850623',
+    positive = '#21BA45',
+    negative = '#ff0000',
+    info = '#ffffff',
+    warning = '#ff7b00'
 )
 
 def convert():
