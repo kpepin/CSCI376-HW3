@@ -14,7 +14,7 @@ ui.colors(
 def convert():
     try: 
         temp = float(input_field.value)
-        if conversion_type.value == "Celsius to Fahrenheit (testing!)":
+        if conversion_type.value == "Celsius to Fahrenheit":
             result_label.set_text(f"{temp}°C = {temp * 9/5 + 32:.2f}°F")
         else:
             result_label.set_text(f"{temp}°F = {(temp - 32) * 5/9:.2f}°C")
